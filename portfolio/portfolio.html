@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="portfolio.css" />
+    <script src="https://kit.fontawesome.com/c68b4388d9.js" crossorigin="anonymous"></script>
+    <title>portfolio</title>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo" alt="" />
+
+                <ul id="sidemenu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <!-- <li><a href="#">Portfolio</a></li> -->
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars"onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Android Developer/Web Developer</p>
+                <h2>
+                    <span>Assalamu Alaikum,</span> <br />
+                    This is Md.Asadullah-Al-Galib
+                </h2>
+            </div>
+        </div>
+    </div>
+
+    <!-- ------------------- about------------------- -->
+    <div id="about">
+        <div class="container"></div>
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/galib.png" alt="">
+            </div>
+            <div class="about-col-2">
+                <h2 class="title">About Me</h2>
+                <p>
+                    I am Md. Asadullah-Al-Galib.Doing my undergraduate at Leading university in CSE.
+                </p>
+                <div class="tabs">
+                    <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('Education')">Education</p>
+                </div>
+
+                <div class="contents active-tab" id="Skills">
+                    <ul>
+                        <li><span>Development <br></span>Web Development <br> Android development</li>
+                    </ul>
+                    <ul>
+                        <li><span>Gamer <br></span>PUBG <br>Valorant <br>CS GO</li>
+                    </ul>
+                </div>
+
+                <div class="contents" id="Experience">
+                    <ul>
+                        <li><span>SUST <br></span>SUST SWE Contest<br></li>
+                    </ul>
+                </div>
+
+                <div class="contents" id="Education">
+                    <ul>
+                        <li><span>2015-17 <br></span>Golapgonj Jamia Islamia High School <br>class 9th,10th</li>
+                    </ul>
+                    <ul>
+                        <li><span>2017-19 <br></span>Govt. MC Academy Golapgonj<br>HSC 1st,2nd year</li>
+                    </ul>
+                </div>
+
+
+            </div>
+        </div>
+        <!-- -----------------services--------------------- -->
+        <div id="services">
+            <div class="container">
+                <h1 class="title">MY Services</h1>
+                <div class="services-list">
+                    <div>
+                        <i class="fa-solid fa-code"></i>
+                        <h2>Web Development</h2>
+                        <p>Updated Soon</p>
+                        <a href="#">Learn more</a>
+                    </div>
+
+                    <div>
+                        <i class="fa-solid fa-mobile"></i>
+                        <h2>Android Development</h2>
+                        <p>Updated Soon</p>
+                        <a href="#">Learn more</a>
+                    </div>
+
+                    <div>
+                        <i class="fa-solid fa-compass-drafting"></i>
+                        <h2>App Design</h2>
+                        <p>Updated Soon</p>
+                        <a href="#">Learn more</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- -----------------Contact--------------------- -->
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="title">Contact Me</h1>
+                        <p><i class="fa-solid fa-paper-plane"></i>algalibxyz@gmail.com</p>
+                        <p><i class="fa-solid fa-phone"></i>+8801734462323</p>
+                        <div class="social">
+                            <a href="https://www.facebook.com/AlGalib303"><i class="fab fa-facebook"></i></a>
+                            <a href="https://www.linkedin.com/in/AlGalib303"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="https://github.com/Galib3O3"><i class="fab fa-github"></i></a>
+                            <a href="https://www.instagram.com/_asadullah_al_galib/"><i class="fab fa-instagram"></i></a>
+
+                        </div>
+                        <a href="#" class="cv btn">Download CV</a>
+                    </div>
+                    <div class="contact-right">
+                        <form>
+                            <input type="text" name="name" placeholder="your name" required>
+                            <input type="text" name="email" placeholder="your email" required>
+                            <textarea name="message" rows="6" placeholder="your message"></textarea>
+                            <button type="submit" class="cv btn">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="copyright">
+            <p>Copyright  <i class="fa-regular fa-copyright"></i>2023 by GMan </p>
+        </div>
+
+
+        <script type="text/javascript" src="index.js"></script>
+    
+  
+</body>
+
+</html>
